@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.15' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.title {
+    text-align: center;
+}
+
+.navigation {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+ .navigation ul li {
+     display: inline-block;
+ }
+    .navigation ul li a {
+        display: block;
+        padding: 0.3rem 1rem;
+        transition: all 0.4s linear;
+        border-radius: 5px;
+        text-decoration: none;
+        color: black;
+    }
+        .navigation ul li a:hover {
+            background: #ccc;
+        }
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    display: grid;
+    gap: 1.6em;
+    text-align: center;
+}
+
+.p {
+    text-align: justify;
+}
+
+.container>.header, .container>.content, .container>.footer {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.container>.header, .container>.footer {
+    grid-column: 1/-1;
+    background-color: yellow;
+    color: black;
+}
+
+button {
+    width: 40px;
+    height: 35px;
+    background: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    padding: -4rem;
+    color: blue;
+    font-size: 25px;
+    transition: 3s ease all;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+    }
+    .container .content {
+        grid-column: 1 / -1;
+    }
+    .container .sidebar {
+        grid-column: 1 / 6;
+    }
+
+    .container .related-post {
+        grid-column: 1/-1;
+    }
+}
+
+/*Telefonos celulares*/
+@media only screen and (max-width: 600px) {
+    body { background-color: white !important;}
+    }
+    
+    /*Tablets y celulares*/
+    @media only screen and (min-width: 600px) {
+    body { background-color: white !important;}
+    }
+    
+    /*Tablets*/
+    @media only screen and (min-width: 768px) {
+    body { background-color: white !important;}
+    }
+    
+    /*Notebook*/
+    @media only screen and (min-width: 992px) {
+    body { background-color: white !important;}
+    }
+    
+    /*Notebook y PC de escritorio*/
+    @media only screen and (min-width: 1200px) {
+    body { background-color: white !important;}
+    }
